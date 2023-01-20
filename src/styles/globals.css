@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Homepage banner css */
+.banner {
+    background-image: url("../../public/assets/mosque.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bottom-bar {
+    box-shadow: -2px -2px 10px #0000001e;
+}
+
+@media only screen and (max-width: 640px) {
+    .banner {
+        background-image: url("../../public/assets/mosque2.png");
+        margin: -85px -20px 0 -20px;
+        border-radius: 0 0 65px 65px;
+        height: 365px;
+        background-size: cover;
+    }
+
+    .sticky-header {
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 10px #0000001e;
+    }
+}
+
+/* scrollbar hide */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* when hover on the relative to on visibility */
+.relative:hover .invisible {
+    visibility: visible;
+}
